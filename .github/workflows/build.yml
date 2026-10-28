@@ -25,7 +25,7 @@ jobs:
 
     - name: Gerar Gradle Wrapper e Permissoes
       run: |
-        gradle wrapper --gradle-version 8.4
+        gradle wrapper --gradle-version 8.7
         chmod +x gradlew
 
     - name: Compilar APK (assembleDebug)
