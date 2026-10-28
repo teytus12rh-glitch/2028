@@ -1,0 +1,39 @@
+name: Build Leandro TV Launcher APK
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Compilar APK Leandro TV Launcher
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Baixar Codigo do Repositorio
+      uses: actions/checkout@v4
+
+    - name: Configurar Java 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Configurar Gradle
+      uses: gradle/actions/setup-gradle@v3
+
+    - name: Gerar Gradle Wrapper e Permissoes
+      run: |
+        gradle wrapper --gradle-version 8.4
+        chmod +x gradlew
+
+    - name: Compilar APK (assembleDebug)
+      run: ./gradlew assembleDebug --no-daemon
+
+    - name: Disponibilizar APK para Download
+      uses: actions/upload-artifact@v4
+      with:
+        name: Leandro-Correa-Vision-Pro-APK
+        path: app/build/outputs/apk/debug/*.apk
+        retention-days: 30
