@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Launcher do Leandro</string>
+    <!-- Nome mostrado na saudação. Troque aqui se quiser. -->
+    <string name="owner_name">Leandro</string>
+
+    <!-- Local do clima. Troque pela sua cidade (latitude e longitude em graus decimais). -->
+    <string name="city_name">Ourinhos</string>
+    <string name="city_latitude" translatable="false">-22.9797</string>
+    <string name="city_longitude" translatable="false">-49.8697</string>
+
+    <string name="title_favorites">★  Favoritos</string>
+    <string name="title_tv_apps">Apps de TV</string>
+    <string name="title_other_apps">Outros apps</string>
+    <string name="hint_favorite">Dica: segure o botão OK em qualquer app para favoritar ★</string>
+    <string name="weather_loading">Carregando clima…</string>
+    <string name="weather_offline">Sem conexão com a internet</string>
+</resources>

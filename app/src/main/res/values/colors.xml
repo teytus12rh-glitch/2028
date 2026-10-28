@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#B3FFFFFF</color>
+    <color name="chip_text_dark">#FF101820</color>
+    <color name="star">#FFFFD54F</color>
+    <color name="rain">#FF8AD0FF</color>
+</resources>
